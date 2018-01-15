@@ -1,6 +1,6 @@
 <template>
-  <header v-if="src.ready">
-    <h2>{{src.name}}</h2>
+  <header>
+    <h1>{{src.name}}</h1>
     <h2>{{src.position}}</h2>
     <ul>
       <li v-for="(p, i) in src.personalInfo" :key="i">

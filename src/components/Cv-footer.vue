@@ -1,5 +1,5 @@
 <template>
-  <footer v-if="src.ready">
+  <footer>
     <h2>{{src.title}}</h2>
     <p>{{src.clause}}</p>
   </footer>
