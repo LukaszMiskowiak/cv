@@ -19,9 +19,25 @@ export default {
     name: 'App',
     data() {
         return {
-            header: [],
-            content: [],
-            footer: [],
+            header: {
+                name: '',
+                position: '',
+                personalInfo: [],
+                ready: false,
+            },
+            content: [
+                {
+                    title: '',
+                    text: '',
+                    list: [],
+                    ready: false,
+                },
+            ],
+            footer: {
+                title: '',
+                clause: '',
+                ready: false,
+            },
         };
     },
     components: {
