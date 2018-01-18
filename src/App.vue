@@ -1,5 +1,5 @@
 <template>
-  <main id="app" class="A4">
+  <main id="app" class="A5">
     <article class="sheet padding-10mm cv">
 
       <headerCv
