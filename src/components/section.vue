@@ -42,7 +42,7 @@ export default {
                 if (!a.children[0].text) {
                     ul.push(li);
                     li = [];
-                };
+                }
             });
             if (li.length) ul.push(li);
             return ul;

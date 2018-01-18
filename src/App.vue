@@ -12,6 +12,10 @@
         :key="`section-${i}`"
         v-if="ready"
       />
+      <footerCv
+        :data="data.footer"
+        v-if="ready"
+      />
 
     </article>
   </main>
@@ -20,6 +24,7 @@
 <script>
 import headerCv from './components/header';
 import sectionCv from './components/section';
+import footerCv from './components/footer';
 
 require('../node_modules/paper-css/paper.min.css');
 
@@ -41,7 +46,7 @@ export default {
         };
     },
     beforeMount() {
-        const query = '*[_type == "cv"] {header, section[]->}[0]';
+        const query = '*[_type == "cv"] {header, footer, section[]->}[0]';
         client.fetch(query)
             .then((cv) => {
                 this.data = cv;
@@ -51,6 +56,7 @@ export default {
     components: {
         headerCv,
         sectionCv,
+        footerCv,
     },
 };
 </script>
