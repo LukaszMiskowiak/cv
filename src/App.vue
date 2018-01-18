@@ -70,6 +70,7 @@ $main-text-color: ;
 $secondary-text-color: ;*/
 
 .cv {
-
+  font-family: 'Source Serif Pro', serif;
+  font-size: .9rem;
 }
 </style>
